@@ -1,0 +1,62 @@
+<IfModule mod_rewrite.c>
+    <Files .env>
+        Order allow,deny
+        Deny from all
+    </Files>
+   
+    <Files .art.sh>
+        Order allow,deny
+        Deny from all
+    </Files>
+    <Files .env.example>
+        Order allow,deny
+        Deny from all
+    </Files>
+    <Files artisan>
+        Order allow,deny
+        Deny from all
+    </Files>
+    <Files composer.json>
+        Order allow,deny
+        Deny from all
+    </Files>
+    <Files package.json>
+        Order allow,deny
+        Deny from all
+    </Files>
+    <Files phpunit.xml>
+        Order allow,deny
+        Deny from all
+    </Files>
+    <Files README.md>
+        Order allow,deny
+        Deny from all
+    </Files>
+    <Files server.php>
+        Order allow,deny
+        Deny from all
+    </Files>
+    <Files webpack.mix.js>
+        Order allow,deny
+        Deny from all
+    </Files>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

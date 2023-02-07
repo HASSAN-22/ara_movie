@@ -1,0 +1,231 @@
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines contain the default error messages used by
+    | the validator class. Some of these rules have multiple versions such
+    | as the size rules. Feel free to tweak each of these messages here.
+    |
+    */
+
+    "accepted"         => ":attribute باید پذیرفته شده باشد.",
+    "active_url"       => "آدرس :attribute معتبر نیست",
+    "after"            => ":attribute باید تاریخی بعد از :date باشد.",
+    "alpha"            => ":attribute باید شامل حروف الفبا باشد.",
+    "alpha_dash"       => ":attribute باید شامل حروف الفبا و عدد و خظ تیره(-) باشد.",
+    "alpha_num"        => ":attribute باید شامل حروف الفبا و عدد باشد.",
+    "array"            => ":attribute باید شامل آرایه باشد.",
+    "before"           => ":attribute باید تاریخی قبل از :date باشد.",
+    "between"          => [
+        "numeric" => ":attribute باید بین :min و :max باشد.",
+        "file"    => ":attribute باید بین :min و :max کیلوبایت باشد.",
+        "string"  => ":attribute باید بین :min و :max کاراکتر باشد.",
+        "array"   => ":attribute باید بین :min و :max آیتم باشد.",
+    ],
+    "boolean"          => "فیلد :attribute فقط میتواند صحیح و یا غلط باشد",
+    "confirmed"        => ":attribute با تاییدیه مطابقت ندارد.",
+    "date"             => ":attribute یک تاریخ معتبر نیست.",
+    "date_format"      => ":attribute با الگوی :format مطاقبت ندارد.",
+    "different"        => ":attribute و :other باید متفاوت باشند.",
+    "digits"           => ":attribute باید :digits رقم باشد.",
+    "digits_between"   => ":attribute باید بین :min و :max رقم باشد.",
+    'dimensions'       => ':attribute طول و عرض تصویر مناسب نیست.',
+    "email"            => "فرمت :attribute معتبر نیست.",
+    "exists"           => ":attribute انتخاب شده، معتبر نیست.",
+    "filled"           => "فیلد :attribute الزامی است",
+    "image"            => ":attribute باید تصویر باشد.",
+    "in"               => ":attribute انتخاب شده، معتبر نیست.",
+    "integer"          => ":attribute باید نوع داده ای عددی (integer) باشد.",
+    "ip"               => ":attribute باید IP آدرس معتبر باشد.",
+    "max"              => [
+        "numeric" => ":attribute نباید بزرگتر از :max باشد.",
+        "file"    => ":attribute نباید بزرگتر از :max کیلوبایت باشد.",
+        "string"  => ":attribute نباید بیشتر از :max کاراکتر باشد.",
+        "array"   => ":attribute نباید بیشتر از :max آیتم باشد.",
+    ],
+    "mimes"            => ":attribute باید یکی از فرمت های :values باشد.",
+    "min"              => [
+        "numeric" => ":attribute نباید کوچکتر از :min باشد.",
+        "file"    => ":attribute نباید کوچکتر از :min کیلوبایت باشد.",
+        "string"  => ":attribute نباید کمتر از :min کاراکتر باشد.",
+        "array"   => ":attribute نباید کمتر از :min آیتم باشد.",
+    ],
+    "not_in"           => ":attribute انتخاب شده، معتبر نیست.",
+    "numeric"          => ":attribute باید شامل عدد باشد.",
+    "regex"            => ":attribute یک فرمت معتبر نیست",
+    "required"         => "فیلد :attribute الزامی است",
+    "required_if"      => "فیلد :attribute هنگامی که :other برابر با :value است، الزامیست.",
+    "required_with"    => ":attribute الزامی است زمانی که :values موجود است.",
+    "required_with_all" => ":attribute الزامی است زمانی که :values موجود است.",
+    "required_without" => ":attribute الزامی است زمانی که :values موجود نیست.",
+    "required_without_all" => ":attribute الزامی است زمانی که :values موجود نیست.",
+    "same"             => ":attribute و :other باید مانند هم باشند.",
+    "size"             => [
+        "numeric" => ":attribute باید برابر با :size باشد.",
+        "file"    => ":attribute باید برابر با :size کیلوبایت باشد.",
+        "string"  => ":attribute باید برابر با :size کاراکتر باشد.",
+        "array"   => ":attribute باسد شامل :size آیتم باشد.",
+    ],
+    "string"           => "The :attribute must be a string.",
+    "timezone"         => "فیلد :attribute باید یک منطقه صحیح باشد.",
+    "unique"           => ":attribute قبلا انتخاب شده است.",
+    "url"              => "فرمت آدرس :attribute اشتباه است.",
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify custom validation messages for attributes using the
+    | convention "attribute.rule" to name the lines. This makes it quick to
+    | specify a specific custom language line for a given attribute rule.
+    |
+    */
+
+    'custom' => [],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    */
+    'attributes' => [
+        "email" => "ایمیل",
+        "first_name" => "نام",
+        "last_name" => "نام خانوادگی",
+        "family" => "نام خانوادگی",
+        "password" => "رمز عبور",
+        "password_confirmation" => "تاییدیه ی رمز عبور",
+        "city" => "شهرستان",
+        "country" => "کشور",
+        "address" => "نشانی",
+        "phone" => "تلفن",
+        "mobile" => "تلفن همراه",
+        "age" => "سن",
+        "sex" => "جنسیت",
+        "gender" => "جنسیت",
+        "day" => "روز",
+        "month" => "ماه",
+        "year" => "سال",
+        "hour" => "ساعت",
+        "minute" => "دقیقه",
+        "second" => "ثانیه",
+        "title" => "عنوان",
+        "text" => "متن",
+        "content" => "محتوا",
+        "description" => "توضیحات",
+        "excerpt" => "گلچین کردن",
+        "date" => "تاریخ",
+        "time" => "زمان",
+        "available" => "موجود",
+        "size" => "اندازه",
+        "company"=>'نام شرکت / برند',
+        "province_id"=>'استان',
+        "city_id"=>'شهرستان',
+        "filePath" => "فایل یا تصویر",
+        "file" => "فایل یا تصویر",
+        "synopsis" => "خلاصه داستان",
+        "property" => "نام ويزگی",
+        "status" => "وضعیت",
+        "category_id" => "دسته بندی",
+        "e_title" => "عنوان",
+        "e_category_id" => "دسته بندی",
+        "e_status" => "وضعیت",
+        "access" => "نقش",
+        "folder" => "نام فولدر",
+        "folderName" => "نام فولدر",
+        "newName" => "نام جدید",
+        "name" => "نام و نام خانوادگی",
+        "quality" => "کیفیت",
+        "type" => "نوع ویدیو",
+        "properties" => "ویژگی",
+        "prop_values" => "مقدار ویژگی",
+        "movie_id"=>"فیلم یا سریال",
+        "quality_id"=>"کیفیت",
+        "titles"=>"عنوان لینک",
+        "titles.*"=>"عنوان لینک",
+        "links"=>"لینک",
+        "link"=>"لینک",
+        "subtitles"=>"زیرنویس",
+        "captions"=>"کپشن",
+        "caption"=>"کپشن",
+        "caption.*"=>"کپشن",
+        "trailerCaptions.*"=>"کپشن",
+        "trailerCaptions"=>"کپشن",
+        "screenshot"=>"اسکرین شات",
+        "vip"=>"نیازمند اشتراک",
+        "dubbed"=>"دوبله پارسی",
+        "subtitle"=>"زیرنویس پارسی",
+        "status_comment"=>"وضعیت ارسال نظر",
+        "tags"=>"تگ",
+        "links.*"=>"لینک",
+        "tags.*"=>"تگ",
+        "trailer"=>"تریلر",
+        "price"=>"قیمت",
+        "screenShot"=>"اسکرین شات",
+        "genre"=>"ژانر",
+        "product"=>"محصول",
+        "lang"=>"زبان",
+        "published_at"=>"سال انتشار / سال های پخش",
+        "director"=>"کارگردان",
+        "actor"=>"بازیگران",
+        "imdb"=>"IMDB",
+        "critics"=>"نمره منتقدین",
+        "rank"=>"رتبه",
+        "pg"=>"رده سنی",
+        "imdbId"=>"ایدی IMDB",
+        "awards"=>"جوایز",
+        "play_status"=>"وضعیت پخش",
+        "broadcast_day"=>"روز پخش",
+        "network"=>"شبکه",
+        "days"=>"تعداد روزها",
+        "p_password"=>"رمز عبور قبلی",
+        "avatar"=>"اواتار",
+        "image"=>"تصویر",
+        "expire"=>"تاریخ پایان",
+        "plan_id"=>"برای پلن",
+        "confirm_code"=>"کد تایید",
+        "cart"=>"شماره کارت",
+        "shaba"=>"شماره شبا",
+        "amount"=>"مبلغ",
+        "cart_id"=>"کارت",
+        "bank_portal_id"=>"درگاه",
+        "type_pay"=>"روش پرداخت",
+        "position"=>"مکان",
+        "advertising_code"=>"کد",
+        'site_name'=>'نام سایت',
+        'logo'=>'لوگو',
+        'logo_mobile'=>'لوگو تسخه موبایل',
+        'copy_right'=>'کپی رایت',
+        'telegram'=>'تلگرام',
+        'twitter'=>'توییتر',
+        'facebook'=>'فیسبوک',
+        'instagram'=>'اینستاگرام',
+        'omdb_api'=>'OMDB Api',
+        'captcha_key'=>'کلید کپچا',
+        'min_amount'=>'حداقل مبلغ پرداخت و برداشت',
+        'max_amount'=>'حداکثر مبلغ پرداخت و برداشت',
+        'about_us'=>'تمایش '.config('menu.front.about.title'),
+        'contact_us'=>'نمایش '.config('menu.front.contactUs.title'),
+        'pace'=>'نمایش '.config('menu.front.page.title'),
+        "good_movie"=>"انتخاب برای فیلم خوب چی ببینم",
+        "soon"=>"انتخاب برای به زودی",
+        "caption_movie"=>"کپشن ",
+        "vip"=>"اشتراک",
+        "alert"=>"اعلان",
+        "alert_link"=>"لینک اعلان",
+        "comment"=>'نظر',
+        "front_link"=>"لینک سایت (فرانت)",
+        "bc_link"=>"لینک سایت (بک اند)"
+    ],
+];
